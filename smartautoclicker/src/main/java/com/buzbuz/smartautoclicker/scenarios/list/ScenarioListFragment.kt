@@ -146,6 +146,11 @@ class ScenarioListFragment : Fragment() {
     }
 
     private fun onMenuItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_language) {
+            AppLanguageSelector.show(requireContext())
+            return true
+        }
+
         val uiState = scenarioListViewModel.uiState.value ?: return false
 
         when (item.itemId) {
@@ -164,7 +169,6 @@ class ScenarioListFragment : Fragment() {
             R.id.action_cancel -> scenarioListViewModel.setUiState(ScenarioListUiState.Type.SELECTION)
             R.id.action_search -> scenarioListViewModel.setUiState(ScenarioListUiState.Type.SEARCH)
             R.id.action_select_all -> scenarioListViewModel.toggleAllScenarioSelectionForBackup()
-            R.id.action_language -> AppLanguageSelector.show(requireContext())
             R.id.action_settings -> startSettingsActivity()
             else -> return false
         }
