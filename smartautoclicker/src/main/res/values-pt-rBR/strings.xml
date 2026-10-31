@@ -38,6 +38,7 @@
     <string name="menu_item_title_cancel">Cancelar</string>
     <string name="menu_item_title_search">Pesquisar</string>
     <string name="menu_item_title_settings">Configurações</string>
+    <string name="menu_item_title_language">Idioma do aplicativo</string>
 
 
     <string name="item_scenario_filter_by_name">Nome</string>

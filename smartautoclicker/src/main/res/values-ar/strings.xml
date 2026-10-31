@@ -36,6 +36,7 @@
     <string name="menu_item_title_cancel">إلغاء</string>
     <string name="menu_item_title_search">بحث</string>
     <string name="menu_item_title_settings">الإعدادات</string>
+    <string name="menu_item_title_language">لغة التطبيق</string>
 
     <string name="item_scenario_filter_by_name">الاسم</string>
     <string name="item_scenario_filter_by_recent">الأحدث</string>

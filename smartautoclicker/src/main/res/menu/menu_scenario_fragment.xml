@@ -55,6 +55,11 @@
         tools:ignore="AlwaysShowAction" />
 
     <item
+        android:id="@+id/action_language"
+        android:title="@string/menu_item_title_language"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_settings"
         android:icon="@drawable/ic_settings_filled"
         app:showAsAction="always"

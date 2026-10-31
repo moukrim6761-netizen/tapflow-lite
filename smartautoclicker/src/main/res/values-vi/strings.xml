@@ -26,6 +26,7 @@
     <string name="menu_item_title_cancel">Hủy bỏ</string>
     <string name="menu_item_title_search">Tìm kiếm</string>
     <string name="menu_item_title_settings">Cài đặt</string>
+    <string name="menu_item_title_language">Ngôn ngữ ứng dụng</string>
     <string name="item_scenario_filter_by_name">Tên</string>
     <string name="item_scenario_filter_by_recent">Gần đây</string>
     <string name="item_scenario_filter_by_most_used">Công dụng</string>

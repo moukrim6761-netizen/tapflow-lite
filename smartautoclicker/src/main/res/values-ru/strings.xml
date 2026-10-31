@@ -38,6 +38,7 @@
     <string name="menu_item_title_cancel">Отмена</string>
     <string name="menu_item_title_search">Найти</string>
     <string name="menu_item_title_settings">Настройки</string>
+    <string name="menu_item_title_language">Язык приложения</string>
 
     <string name="item_scenario_filter_by_name">Имя</string>
     <string name="item_scenario_filter_by_recent">Недавний</string>

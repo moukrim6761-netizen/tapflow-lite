@@ -55,6 +55,7 @@ import com.buzbuz.smartautoclicker.scenarios.list.copy.ScenarioCopyDialog.Compan
 import com.buzbuz.smartautoclicker.scenarios.list.model.ScenarioListUiState
 import com.buzbuz.smartautoclicker.scenarios.migration.ConditionsMigrationFragment.Companion.FRAGMENT_RESULT_KEY_COMPLETED
 import com.buzbuz.smartautoclicker.scenarios.migration.ConditionsMigrationFragment.Companion.FRAGMENT_TAG_CONDITION_MIGRATION_DIALOG
+import com.buzbuz.smartautoclicker.settings.AppLanguageSelector
 import com.buzbuz.smartautoclicker.settings.SettingsActivity
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -163,6 +164,7 @@ class ScenarioListFragment : Fragment() {
             R.id.action_cancel -> scenarioListViewModel.setUiState(ScenarioListUiState.Type.SELECTION)
             R.id.action_search -> scenarioListViewModel.setUiState(ScenarioListUiState.Type.SEARCH)
             R.id.action_select_all -> scenarioListViewModel.toggleAllScenarioSelectionForBackup()
+            R.id.action_language -> AppLanguageSelector.show(requireContext())
             R.id.action_settings -> startSettingsActivity()
             else -> return false
         }
