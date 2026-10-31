@@ -31,8 +31,8 @@ bool Detector::loadModels(const std::string& detectionModelPath, const std::map<
     return textMatcher->init(detectionModelPath, recognitionModels);
 }
 
-void Detector::setScreenImage(std::unique_ptr<cv::Mat> screenColorMat, const char* metricsTag) {
-    screenImage->processNewData(std::move(screenColorMat), metricsTag);
+void Detector::setScreenImage(std::unique_ptr<cv::Mat> screenColorMat) {
+    screenImage->processNewData(std::move(screenColorMat));
 }
 
 TemplateMatchingResult* Detector::detectImage(

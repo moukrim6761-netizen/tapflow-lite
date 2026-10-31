@@ -81,19 +81,15 @@ extern "C" {
             JNIEnv *env,
             jobject self,
             jobject screenBitmap,
-            jstring metricsTag
+            jstring
     ) {
-        const char* nativeMetricsTag = env->GetStringUTFChars(metricsTag, nullptr);
-        if (nativeMetricsTag == nullptr) return;
-
         auto detector = getDetectorFromJavaRef(env, self);
         if (!detector) return;
 
         std::unique_ptr<cv::Mat> screenMat = loadMatFromRGBA8888Bitmap(env, screenBitmap);
         if (!screenMat) return;
 
-        detector->setScreenImage(std::move(screenMat), nativeMetricsTag);
-        env->ReleaseStringUTFChars(metricsTag, nativeMetricsTag);
+        detector->setScreenImage(std::move(screenMat));
     }
 
     JNIEXPORT jdoubleArray JNICALL Java_com_buzbuz_smartautoclicker_core_detection_NativeDetector_detectImageNative(

@@ -17,13 +17,12 @@
 
 #include <opencv2/imgproc/imgproc.hpp>
 #include "screen_image.hpp"
-#include "../../utils/correction.hpp"
 
 using namespace smartautoclicker;
 
 
-void ScreenImage::processNewData(std::unique_ptr<cv::Mat> newData, const char* metricsTag) {
-    if (!newData || newData->empty() || requiresCorrection(metricsTag)) return;
+void ScreenImage::processNewData(std::unique_ptr<cv::Mat> newData) {
+    if (!newData || newData->empty()) return;
 
     this->colorMat = std::move(*newData);
     grayValid = false;

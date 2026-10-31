@@ -29,7 +29,7 @@ namespace smartautoclicker {
         static cv::Mat cropMat(const cv::Mat& mat, const cv::Rect& roi);
 
     public:
-        void processNewData(std::unique_ptr<cv::Mat> newData, const char* metricsTag);
+        void processNewData(std::unique_ptr<cv::Mat> newData);
 
         [[nodiscard]] cv::Mat cropColor(const cv::Rect& roi) const;
         [[nodiscard]] cv::Mat cropGray(const cv::Rect& roi) const;
