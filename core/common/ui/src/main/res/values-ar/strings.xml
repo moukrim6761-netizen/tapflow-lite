@@ -114,5 +114,12 @@
     <string name="content_desc_stop_clicker">أوقف النقر</string>
     <string name="content_desc_confirm">يتأكد</string>
     <string name="content_desc_go_back">العودة إلى الحوار</string>
+    <string name="condition_operator_and">و</string>
+    <string name="condition_operator_or">أو</string>
+    <string name="comparison_operator_greater_or_equals">≥</string>
+    <string name="comparison_operator_greater">&gt;</string>
+    <string name="comparison_operator_equals">=</string>
+    <string name="comparison_operator_lower_or_equals">≤</string>
+    <string name="comparison_operator_lower">&lt;</string>
 
 </resources>

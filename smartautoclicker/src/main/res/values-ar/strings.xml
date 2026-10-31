@@ -166,5 +166,14 @@
     <string name="message_backup">أنشئ أو استورد أرشيف مضغوط من السيناريوهات</string>
     <string name="button_import">استيراد</string>
     <string name="button_export">تصدير</string>
+    <string name="ad_slot_placeholder">موضع الإعلان محجوز (%1$s)؛ لا توجد مكتبة إعلانات شبكية مفعّلة في هذا الإصدار.</string>
+    <string name="ad_slot_scenario_list">قائمة السيناريوهات</string>
+    <string name="ad_slot_settings">الإعدادات</string>
+    <string name="ad_slot_task_completion">إكمال المهمة</string>
+    <string name="field_privacy_policy">سياسة الخصوصية</string>
+    <string name="field_source_repository">مستودع الشيفرة المصدرية</string>
+    <string name="field_gpl_license">ترخيص GPL-3.0</string>
+    <string name="field_upstream_attribution">الإسناد إلى المشروع الأصلي</string>
+    <string name="toast_no_browser_available">لا يتوفر متصفح متوافق لفتح هذا الرابط.</string>
 
 </resources>

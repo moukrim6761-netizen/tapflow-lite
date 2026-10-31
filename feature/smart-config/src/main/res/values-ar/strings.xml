@@ -487,4 +487,52 @@
 
     <string name="warning_dialog_message_delete">أنت على وشك حذف هذا العنصر، هل أنت متأكد؟</string>
 
+    <string name="generic_area_desc">[%1$d - %2$d; %3$d - %4$d]</string>
+    <string name="field_scenario_fps_limit_disable_rate">∞</string>
+    <string name="field_scenario_quality_resolution">%1$d x %2$d</string>
+    <string name="item_alphabet_name_arabic_desc">أبج</string>
+    <string name="item_alphabet_name_chinese_simplified_desc">汉字</string>
+    <string name="item_alphabet_name_chinese_traditional_desc">漢字</string>
+    <string name="item_alphabet_name_cyrillic_desc">АБВ</string>
+    <string name="item_alphabet_name_devanagari_desc">अआइ</string>
+    <string name="item_alphabet_name_japanese_desc">あア日</string>
+    <string name="item_alphabet_name_kannada_desc">ಅಆಇ</string>
+    <string name="item_alphabet_name_korean_desc">가나다</string>
+    <string name="item_alphabet_name_latin_desc">ABC</string>
+    <string name="item_alphabet_name_tamil_desc">அஆஇ</string>
+    <string name="item_alphabet_name_telugu_desc">అఆఇ</string>
+    <string name="field_click_offset_desc">X=%1$d Y=%2$d</string>
+    <string name="field_click_offset_x">X</string>
+    <string name="field_click_offset_y">Y</string>
+
+    <string name="dialog_title_intent">إجراء Intent</string>
+    <string name="dialog_title_intent_flags">علامات Intent</string>
+    <string name="dialog_title_intent_actions">إجراءات Intent</string>
+    <string name="dialog_title_intent_component_name">اسم المكوّن</string>
+    <string name="dropdown_intent_sending_type_item_activity">بدء نشاط</string>
+    <string name="dropdown_intent_sending_type_item_broadcast">إرسال بث</string>
+    <string name="field_intent_action_label">الإجراء</string>
+    <string name="field_intent_broadcast_action_label">إجراء البث</string>
+    <string name="field_intent_flags_label">العلامات</string>
+    <string name="field_intent_component_name_label">اسم المكوّن</string>
+    <string name="field_intent_extra_title">الإضافات</string>
+    <string name="dialog_intent_extra_title">إضافة</string>
+    <string name="dropdown_intent_extra_type_item_boolean">منطقي</string>
+    <string name="dropdown_intent_extra_type_item_byte">بايت</string>
+    <string name="dropdown_intent_extra_type_item_char">حرف</string>
+    <string name="dropdown_intent_extra_type_item_double">عدد عشري مزدوج الدقة</string>
+    <string name="dropdown_intent_extra_type_item_int">عدد صحيح</string>
+    <string name="dropdown_intent_extra_type_item_float">عدد عشري</string>
+    <string name="dropdown_intent_extra_type_item_short">عدد صحيح قصير</string>
+    <string name="dropdown_intent_extra_type_item_string">نص</string>
+    <string name="dropdown_extra_boolean_item_true">صحيح</string>
+    <string name="dropdown_extra_boolean_item_false">خطأ</string>
+    <string name="dropdown_counter_operation_item_add">+</string>
+    <string name="dropdown_counter_operation_item_set">=</string>
+    <string name="dropdown_counter_operation_item_minus">-</string>
+    <string name="dialog_title_ocr_download">تنزيل نموذج OCR</string>
+    <string name="message_ocr_download_disclosure">سيتم تنزيل النموذج المحدد من إصدار GitHub لمشروع Smart AutoClicker/Klick\'r الأصلي. سيتلقى GitHub بيانات الاتصال المعتادة. لن تُرفع أي لقطات شاشة أو سيناريوهات أو إحداثيات أو ملفات أنشأها المستخدم. يُخزّن النموذج الذي تم تنزيله محليًا، ويمكنك الإلغاء قبل بدء طلب الشبكة.</string>
+    <string name="button_ocr_download">تنزيل</string>
+    <string name="button_ocr_download_cancel">إلغاء</string>
+
 </resources>

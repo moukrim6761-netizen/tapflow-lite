@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_title_media_projection_disclosure">التقاط الشاشة لاكتشاف الصور</string>
+    <string name="message_media_projection_disclosure">يحتاج TapFlow Lite إلى التقاط الشاشة فقط لاكتشاف الصور محليًا. سيعرض Android بعد ذلك نافذة طلب الإذن الخاصة به. تُعالج الإطارات الملتقطة محليًا ولا تُرفع إلى EEI14WAT. يمكنك إلغاء هذا الطلب.</string>
+    <string name="button_media_projection_continue">متابعة</string>
+    <string name="button_media_projection_cancel">إلغاء</string>
+</resources>

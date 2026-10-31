@@ -25,5 +25,6 @@
     <string name="notification_button_hide">يخفي</string>
     <string name="notification_button_stop">قف</string>
     <string name="notification_button_config">التكوين</string>
+    <string name="notification_service_channel_name">Klick\'r</string>
 
 </resources>

@@ -97,5 +97,6 @@
     <string name="content_desc_add_action">أضف إجراءً جديدًا إلى السيناريو</string>
     <string name="content_desc_show_actions">إظهار أو إخفاء الإجراءات التي تم إنشاؤها</string>
     <string name="content_desc_open_action_list">افتح قائمة الإجراءات</string>
+    <string name="title_action_count">%1$d/%2$d</string>
 
 </resources>
