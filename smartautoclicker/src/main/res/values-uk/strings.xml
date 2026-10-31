@@ -121,6 +121,8 @@
     <!-- Settings Activity  ======================================================================================== -->
 
     <string name="activity_settings_title">Налаштування</string>
+    <string name="field_app_language">Мова додатка</string>
+    <string name="language_system_default">Використовувати мову пристрою</string>
 
     <string name="field_show_scenario_filters_ui_title">Показувати фільтри сценаріїв</string>
     <string name="field_show_scenario_filters_ui_desc">Відображати або приховувати фільтри на екрані списку сценаріїв.</string>

@@ -68,6 +68,8 @@
     <string name="message_empty_image_events_scenario_list">画像イベントはありません</string>
 
     <string name="activity_settings_title">設定</string>
+    <string name="field_app_language">アプリの言語</string>
+    <string name="language_system_default">端末の言語を使用</string>
 
     <string name="field_show_scenario_filters_ui_title">シナリオのフィルターを表示</string>
     <string name="field_show_scenario_filters_ui_desc">シナリオ一覧画面でフィルターの表示／非表示を切り替えます。</string>

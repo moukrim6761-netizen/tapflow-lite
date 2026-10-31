@@ -47,6 +47,8 @@
     <string name="default_scenario_name">Chưa đặt tên</string>
     <string name="message_empty_image_events_scenario_list">Không có Sự kiện hình ảnh</string>
     <string name="activity_settings_title">Cài đặt</string>
+    <string name="field_app_language">Ngôn ngữ ứng dụng</string>
+    <string name="language_system_default">Dùng ngôn ngữ thiết bị</string>
     <string name="field_show_scenario_filters_ui_title">Hiển thị bộ lọc kịch bản</string>
     <string name="field_show_scenario_filters_ui_desc">Hiển thị hoặc ẩn các bộ lọc trong màn hình danh sách kịch bản.</string>
     <string name="field_legacy_action_ui_title">Giao diện người dùng hành động kế thừa</string>

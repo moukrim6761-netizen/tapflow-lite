@@ -118,6 +118,8 @@
     <!-- Settings Activity  ======================================================================================== -->
 
     <string name="activity_settings_title">Настройки</string>
+    <string name="field_app_language">Язык приложения</string>
+    <string name="language_system_default">Использовать язык устройства</string>
 
     <string name="field_show_scenario_filters_ui_title">Показать фильтры сценариев</string>
     <string name="field_show_scenario_filters_ui_desc">Отобразите или скройте фильтры на экране списка сценариев.</string>

@@ -68,6 +68,8 @@
     <string name="message_empty_image_events_scenario_list">暂无图像事件</string>
 
     <string name="activity_settings_title">设置</string>
+    <string name="field_app_language">应用语言</string>
+    <string name="language_system_default">使用设备语言</string>
 
     <string name="field_show_scenario_filters_ui_title">显示场景筛选</string>
     <string name="field_show_scenario_filters_ui_desc">在场景列表界面显示或隐藏筛选器。</string>

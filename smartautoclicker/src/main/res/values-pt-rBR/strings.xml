@@ -120,6 +120,8 @@
     <!-- Settings Activity  ======================================================================================== -->
 
     <string name="activity_settings_title">Configurações</string>
+    <string name="field_app_language">Idioma do aplicativo</string>
+    <string name="language_system_default">Usar idioma do dispositivo</string>
 
     <string name="field_show_scenario_filters_ui_title">Mostrar filtros de cenários</string>
     <string name="field_show_scenario_filters_ui_desc">Exibir ou ocultar os filtros na tela da lista de cenários.</string>

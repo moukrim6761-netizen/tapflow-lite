@@ -21,6 +21,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -37,6 +39,7 @@ import com.buzbuz.smartautoclicker.core.ui.bindings.fields.setDescription
 import com.buzbuz.smartautoclicker.core.ui.bindings.fields.setOnClickListener
 import com.buzbuz.smartautoclicker.core.ui.bindings.fields.setTitle
 import com.buzbuz.smartautoclicker.databinding.FragmentSettingsBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -59,6 +62,8 @@ class SettingsFragment : Fragment() {
         NoOpAdProvider.bind(AdSlot.SETTINGS, viewBinding.adSlot)
 
         if (LiteMode.ENABLED) hideAdvancedLiteOptions()
+
+        bindAppLanguage()
 
         viewBinding.fieldShowScenarioFilters.apply {
             setTitle(requireContext().getString(R.string.field_show_scenario_filters_ui_title))
@@ -120,6 +125,47 @@ class SettingsFragment : Fragment() {
                 launch { viewModel.shouldShowEntireScreenCapture.collect(::updateForceEntireScreenVisibility) }
                 launch { viewModel.shouldShowPrivacySettings.collect(::updatePrivacySettingsVisibility) }
                 launch { viewModel.shouldShowPurchase.collect(::updateRemoveAdsVisibility) }
+            }
+        }
+    }
+
+    private fun bindAppLanguage() {
+        val languageNames = arrayOf(
+            getString(R.string.language_system_default),
+            "English",
+            "العربية",
+            "Español",
+            "Français",
+            "Italiano",
+            "日本語",
+            "Português (Brasil)",
+            "Русский",
+            "Українська",
+            "Tiếng Việt",
+            "简体中文",
+            "繁體中文",
+        )
+
+        viewBinding.fieldAppLanguage.apply {
+            setTitle(getString(R.string.field_app_language))
+            val currentLanguage = AppCompatDelegate.getApplicationLocales()
+                .toLanguageTags()
+                .substringBefore(',')
+            val selectedIndex = LANGUAGE_TAGS.indexOfFirst { it.equals(currentLanguage, ignoreCase = true) }
+                .takeIf { it >= 0 } ?: 0
+            setDescription(languageNames[selectedIndex])
+            setOnClickListener {
+                MaterialAlertDialogBuilder(requireContext())
+                    .setTitle(R.string.field_app_language)
+                    .setSingleChoiceItems(languageNames, selectedIndex) { dialog, which ->
+                        setDescription(languageNames[which])
+                        AppCompatDelegate.setApplicationLocales(
+                            LocaleListCompat.forLanguageTags(LANGUAGE_TAGS[which])
+                        )
+                        dialog.dismiss()
+                    }
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show()
             }
         }
     }
@@ -191,3 +237,4 @@ private const val PRIVACY_POLICY_URL = "https://github.com/EEI14WAT/tapflow-lite
 private const val SOURCE_REPOSITORY_URL = "https://github.com/EEI14WAT/tapflow-lite"
 private const val GPL_LICENSE_URL = "https://github.com/EEI14WAT/tapflow-lite/blob/main/LICENSE"
 private const val UPSTREAM_ATTRIBUTION_URL = "https://github.com/EEI14WAT/tapflow-lite/blob/main/documentation/UPSTREAM.md"
+private val LANGUAGE_TAGS = listOf("", "en", "ar", "es", "fr", "it", "ja", "pt-BR", "ru", "uk", "vi", "zh-CN", "zh-TW")

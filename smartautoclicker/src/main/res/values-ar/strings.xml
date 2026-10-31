@@ -128,6 +128,8 @@
     <!-- Settings Activity  ======================================================================================== -->
 
     <string name="activity_settings_title">الإعدادات</string>
+    <string name="field_app_language">لغة التطبيق</string>
+    <string name="language_system_default">استخدام لغة الجهاز</string>
 
     <string name="field_show_scenario_filters_ui_title">عرض فلاتر السيناريو</string>
     <string name="field_show_scenario_filters_ui_desc">عرض أو إخفاء الفلاتر في شاشة قائمة السيناريوهات.</string>
