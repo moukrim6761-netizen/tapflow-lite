@@ -14,7 +14,7 @@ TapFlow Lite is an independent GPL-3.0 derivative of Klick'r / Smart AutoClicker
 
 ## TapFlow Lite branding changes
 
-- Branded the user-visible app name as **TapFlow Lite**.
+- Branded the user-visible app name as **Image Tap Pro**.
 - Changed the installable application ID to io.github.eei14wat.tapflow and set version name 0.1.0.
 - Retained the internal com.buzbuz.smartautoclicker source namespace and directly register the existing component classes with the runtime package name, avoiding a behavior-changing mass package rename.
 - Replaced the TapFlow launcher artwork with the user-provided image. The square-cropped source at `branding/tapflow-lite-icon-source.png` is used for adaptive foreground, legacy density-specific launcher icons, and the Play Store icon.

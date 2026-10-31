@@ -5,7 +5,7 @@ Run this checklist against a clean install of the F-Droid debug APK. Record devi
 ## Identity and installation
 
 - [ ] APK installs alongside an existing upstream Smart AutoClicker/Klick'r installation.
-- [ ] Launcher and recent-apps label reads **TapFlow Lite**.
+- [ ] Launcher and recent-apps label reads **Image Tap Pro**.
 - [ ] Launcher icon is legible on light and dark launchers and is not cropped by circular, squircle, or rounded-square masks.
 - [ ] Android Settings shows package io.github.eei14wat.tapflow.debug for the debug build.
 - [ ] No upstream data migration prompt, shared data, or overwritten upstream app data appears.
