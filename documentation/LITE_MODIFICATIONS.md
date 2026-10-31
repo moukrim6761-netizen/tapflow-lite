@@ -17,9 +17,9 @@ TapFlow Lite is an independent GPL-3.0 derivative of Klick'r / Smart AutoClicker
 - Branded the user-visible app name as **TapFlow Lite**.
 - Changed the installable application ID to io.github.eei14wat.tapflow and set version name 0.1.0.
 - Retained the internal com.buzbuz.smartautoclicker source namespace and directly register the existing component classes with the runtime package name, avoiding a behavior-changing mass package rename.
-- Added TapFlow launcher assets generated from branding/tapflow-lite-icon-source.png.
+- Replaced the TapFlow launcher artwork with the user-provided image. The square-cropped source at `branding/tapflow-lite-icon-source.png` is used for adaptive foreground, legacy density-specific launcher icons, and the Play Store icon.
 - Added adaptive-icon foreground padding so the supplied artwork remains inside Android's mask-safe area. The supplied raster is not a reliable monochrome source, so the new adaptive icon intentionally omits a themed monochrome layer.
-- The supplied source icon is a PNG with only IHDR, sRGB, pHYs, IDAT, and IEND chunks; it contains no text, EXIF, or location metadata.
+- The square-cropped source icon is a PNG without text, EXIF, or location metadata.
 
 ## v0.1.0 release-preparation changes
 
